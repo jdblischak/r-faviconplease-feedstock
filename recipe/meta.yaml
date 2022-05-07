@@ -1,4 +1,4 @@
-{% set version = '0.1.1' %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/faviconPlease_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/faviconPlease/faviconPlease_{{ version }}.tar.gz
-  sha256: f90253d31d6d4fbcb5ada26e737243c08eb8c55a5ff6c6698348454a99d024ea
+  sha256: 96effc97545020b84f172c79e0e95c84c93c86465aaba49725f84524eb61826d
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -39,12 +39,10 @@ test:
 about:
   home: https://github.com/jdblischak/faviconPlease
   license: MIT
-  summary: Finds the URL to the 'favicon' for a website. This is useful if you want to display
-    the 'favicon' in an HTML document or web application, especially if the website
-    is behind a firewall.
+  summary: Finds the URL to the 'favicon' for a website. This is useful if you want to display the 'favicon' in an HTML document or web application, especially if the website is behind a firewall.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:

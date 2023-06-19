@@ -1,11 +1,11 @@
-About r-faviconplease
-=====================
+About r-faviconplease-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-faviconplease-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jdblischak/faviconPlease
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-faviconplease-feedstock/blob/main/LICENSE.txt)
 
 Summary: Finds the URL to the 'favicon' for a website. This is useful if you want to display the 'favicon' in an HTML document or web application, especially if the website is behind a firewall.
 
